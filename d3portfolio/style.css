@@ -1,0 +1,133 @@
+/* Add your CSS styles here */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+nav {
+    margin-top: 20px; /* Adjust margin to provide space below fixed header */
+}
+
+.page-section {
+    height: 100vh;
+    margin-top: 100px; /* Adjust margin to provide space below fixed header */
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    flex-grow: 1;
+    margin-right: 20px;
+}
+nav a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease; /* Add a smooth color transition on hover */
+}
+nav a:hover {
+    color: #00bcd4; /* Change color on hover */
+}
+.highlight{
+    color:#008080;
+    font-weight: bold;
+}
+
+section {
+    margin: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.section-header{
+    text-align: center;
+}
+/* about section ------------------------------------------------------------------------------------------------------------------- */
+#about {
+    background-color: #f0f0f0; /* Set a background color */
+    padding: 20px; /* Add some padding for spacing */
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.rounded-image {
+    max-width: 25%; /* set a maximum width */
+    max-height: 50%; /* set a maximum height */
+    border-radius: 100%; /* for rounded corners, adjust the percentage as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* optional: add a subtle shadow */
+    transition: transform 0.3s ease-in-out; /* optional: add a smooth hover effect */
+}
+
+.rounded-image:hover {
+    transform: scale(1.1); /* optional: adjust the scale factor for the hover effect */
+}
+.button-container{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 5vh;
+}
+button{
+    padding:2vh;
+    background-color: #333; 
+    color: #fff; 
+    border: none; 
+    cursor: pointer;
+    border-radius: 10%;;
+}
+/* ----------------------------------------------------------------------------------------------------------------------------------------- */
+.skill-group {
+    margin-bottom: 20px;
+}
+
+.category {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.skills-list {
+    display: none;
+    padding-left: 20px;
+}
+
+.skill {
+    margin-bottom: 5px;
+}
+.bold {
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+
