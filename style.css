@@ -22,7 +22,7 @@ nav {
 }
 
 .page-section {
-    height: 100vh;
+    /* height: 100vh; */
     margin-top: 100px; /* Adjust margin to provide space below fixed header */
 }
 
@@ -88,6 +88,14 @@ footer {
 
 .rounded-image:hover {
     transform: scale(1.1); /* optional: adjust the scale factor for the hover effect */
+}
+
+.project_image { 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* optional: add a subtle shadow */
+    transition: transform 0.3s ease-in-out; /* optional: add a smooth hover effect */
+}
+.project_image:hover {
+    transform: scale(2); /* optional: adjust the scale factor for the hover effect */
 }
 .button-container{
     display: flex; 

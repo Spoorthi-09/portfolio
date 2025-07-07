@@ -6,7 +6,7 @@ d3.select("#about")
         "With an educational background in Computer and Information Science and practical experience in Software development, " +
         "I'm dedicated to contributing my technical expertise to challenging projects and advancing my knowledge and skills in the field.<span>")
     .append("p")
-    .html("<div class='button-container'><a href='resume\\Resume_08Nov23.pdf' download='Spoorthi_Bhat_Resume.pdf'><button>Download Resume</button></a></div>");
+    .html("<div class='button-container'><a href='resume\\SpoorthiSubramanyaBhat_Resume.pdf' download='Spoorthi_Bhat_Resume.pdf'><button>Download Resume</button></a></div>");
 
 //----------------------------------------------------------------------------------------------------------------------------------
 // Education
@@ -15,7 +15,7 @@ const educationData = [
         institution: "University of Massachusetts, Dartmouth",
         location: "Massachusetts, USA",
         degree: "Master’s in Computer and Information Science",
-        duration: "SEPTEMBER 2023 - SEPTEMBER 2025"
+        duration: "SEPTEMBER 2023 - JULY 2025"
     },
     {
         institution: "Vidyavardhaka College of Engineering",
@@ -55,14 +55,26 @@ educationData.forEach(edu => {
 //Experience
 const experienceData = [
     {
+        company: "University of Massachusetts, Dartmouth",
+        location: "MA, USA",
+        position: "Graduate Student Assitant",
+        duration: "JAN 2024 - Present",
+        responsibilities: [
+             "Designed and developed a mobile application for a university-led substance use recovery program, enhancing usability, streamlining navigation, and boosting user engagement by 80% across 150+ active users using Jetpack Compose and MVVM.",
+             "Improved CWE classification accuracy by 22% on 12k+ NVD records using BERT and custom NLP preprocessing; also developed a sonar signal classifier with FFT and ML models, achieving 87% accuracy.",
+             "Mentored undergraduate students with Object-Oriented Programming in Java and graduate students with Theoretical Computer Science as a teaching assistant."
+        ]
+    },
+    {
         company: "In Time Tec",
         location: "Bangalore, Karnataka, India",
         position: "Jr. Software Engineer",
         duration: "MARCH 2022 - AUGUST 2023",
         responsibilities: [
-            "Developed and fine-tuned an Android SDK for Equifax Inc.'s Research and Development department, utilizing Kotlin to gather and scrutinize user and bot behavioral data on Android devices.",
-            "Designed an E-commerce application (Drip Drop Distro) for Android using Jetpack Compose in Kotlin.",
-            "Contributed to front-end and back-end web application development with the cloud-based low-code platform - CALS PLATZ, optimizing database queries for precise, efficient data retrieval and improved performance using MySQL."
+            "Developed a secure Android SDK for Equifax Inc. to capture device and behavioural data (sensor activity, location data) for fraud analytics, deployed in 100K+ production devices with support for Kotlin, Java, and cross-platform frameworks.",
+            "Boosted bot detection accuracy by 25% by enabling real-time data flow for AI/ML-based fraud detection models, while reducing integration issues by 40% through modular SDK architecture and comprehensive client-facing documentation.",
+            "Built scalable backend features for an e-commerce mobile app, reducing API call redundancy by 30% via smart caching and enhancing session security through encrypted local storage and secure token handling.",
+            "Automated backend workflows using SQL triggers and stored procedures. Improved query performance by 20% and significantly reduced manual interventions in routine data operations."
         ]
     },
     {
@@ -107,30 +119,63 @@ experienceData.forEach(exp => {
 //Academic Projects
 const projectsData = [
     {
-        title: "Indoor Navigation System Using Bluetooth Low Energy Beacons - Android Application",
-        link: "",
-        description: "Created two Android applications, serving as BLE transmitter and receiver (Beacon Module). Managed a cloud database and a WebView interface (Admin Module). Implemented user interface for indoor navigation using the receiver Android application (User Module).",
-        skills: "Android Java, Angular, SQLyog, MYSQL, ASP.NET RESTful API, Eddystone format Android Beacon Library."
+        title: "ReLeaf – Android Application for Substance Use Disorder",
+        link: "https://github.com/Spoorthi-09/ReleafTestApp", // Add actual link
+        description: "Built an end-to-end Android app using Jetpack Compose, Room, and MVVM architecture to support goal tracking, daily check-ins, and journaling for substance use recovery. Implemented push notifications, encrypted storage, and Firebase sync to ensure data privacy and user engagement.",
+        skills: ["Kotlin", "Jetpack Compose", "Firebase", "Room Database", "MVVM"],
+        images: ["images/Releaf1.jpg", "images/Releaf2.jpg", "images/Releaf3.jpg", "images/Releaf4.jpg", "images/Releaf5.jpg"]
     },
     {
-        title: "Job Recruitment Portal - Web Application",
-        link: "",
-        description: "Crafted and developed a Job Recruitment Portal to streamline the recruitment process, to address and eliminate inefficiencies in the traditional manual recruitment system. Provided separate interfaces for candidates and employers (Candidate and Employer Portals). Enabled employers to post job vacancies (Job Vacancy Listings). Allowed candidates to upload their resumes (Resume Submission). Enabled candidates to view their applied jobs and application status (Job Application Tracking).",
-        skills: "HTML, CSS, PHP, Javascript, and MYSQL Database."
+        title: "Weather Forecast App – Android (Jetpack Compose + Hilt)",
+        link: "https://github.com/Spoorthi-09/WeatherForecastApp",  // Add your actual link here
+        description: "Developed a modern Weather Forecast Android application using Jetpack Compose and Dagger-Hilt. Integrated live weather data with location-based forecasts, including timezone, temperature, and conditions. Implemented rate limiting to handle API restrictions and enhance app stability. Focused on clean MVVM architecture, dependency injection, and Compose UI design.",
+        skills: ["Kotlin", "Jetpack Compose", "Dagger-Hilt", "MVVM", "Weather API", "Rate Limiting"],
+        images: [
+            "images/weatherApp1.jpg",   // Update to correct relative path if needed
+            "images/WeatherApp2.jpg"
+        ]
     },
     {
-        title: "Sports Management Client-Server Application - Console Application",
-        link: "https://github.com/Spoorthi-09/SportsManagement_clientServerSystem",
-        description: "Designed and implemented a Java-based client-server application for sports team and game management. Developed a multi-threaded server to handle concurrent client connections. Implemented JSON serialization for efficient data exchange. Integrated a MySQL database for persistent data storage. Focused on code modularity and error handling for a robust system. Effectively used the concepts of Object-Oriented Programming.",
-        skills: "Java Programming, Socket Communication, JSON Serialization, Database Integration, and Multi-Threading."
+        title: "Personal Expense Manager – Full Stack Web Application",
+        // link: "https://github.com/Spoorthi-09/ExpenseManager", // Add actual link
+        description: "Designed and developed a full-stack expense manager using Spring Boot, JavaScript, and MongoDB. Implemented RESTful APIs, secure authentication, multi-account tracking, and responsive front-end with real-time search and filtering.",
+        skills: ["Spring Boot", "JavaScript", "MongoDB", "REST APIs", "HTML", "CSS"],
+        image: "images/pems1.png"
     },
     {
         title: "Global Mortality Rate Data Visualization",
         link: "https://spoorthi-09.github.io/CausesOfDeath_DataVizProject/index.html",
-        description: "Developed a data visualization website using D3.js, HTML, and CSS to represent global mortality rates from 1990 to 2019. The project features a home screen with a color-coded geomap displaying global mortality rates for the year 1990. Users can interactively change the displayed year from 1990 to 2019. An on-click function triggers a dual-axis plot for total deaths and GDP over the years for the selected country. The project also includes a cluster visualization depicting the leading causes of deaths for each country in each year and a stacked bar chart to illustrate the causes of deaths over the years.",
-        skills: ["D3.js", "HTML", "CSS"]
+        description: "Developed a D3.js-based interactive data visualization website to explore global mortality rates from 1990 to 2019, including geomaps, dual-axis plots, cluster visualizations, and stacked bar charts.",
+        skills: ["D3.js", "HTML", "CSS"],
+        image: "images/dataViz.png"
+    },
+    {
+        title: "Sports Management Client-Server Application",
+        // link: "https://github.com/Spoorthi-09/SportsManagement_clientServerSystem",
+        description: "Built a Java-based client-server system for real-time sports management using socket programming, multi-threaded servers, and JSON-based communication with MySQL integration for persistent storage.",
+        skills: ["Java", "Socket Programming", "Multi-threading", "JSON", "MySQL"]
+    },
+    {
+        title: "Indoor Navigation System Using BLE Beacons – Android Application",
+        link: "https://www.taylorfrancis.com/chapters/edit/10.1201/9781003363781-23/indoor-navigation-using-ble-beacons-chaya-kumari-spoorthi-bhat-sucharith-pooja-thanmayi", // CRC Press link or placeholder
+        description: "Developed Android BLE transmitter and receiver apps for indoor navigation, with cloud database management and a web-based admin module. Published in CRC Press: Recent Trends in Computational Sciences, 2023.",
+        skills: ["Android (Java)", "BLE", "SQLyog", "Angular", "ASP.NET", "REST API"]
+    },
+    {
+        title: "Job Recruitment Portal – Web Application",
+        // link: "https://github.com/Spoorthi-09/JobRecruitmentPortal", // Add actual link
+        description: "Crafted a job recruitment portal with candidate and employer interfaces, job vacancy listings, resume submissions, and application tracking to streamline the hiring process.",
+        skills: ["HTML", "CSS", "PHP", "JavaScript", "MySQL"]
+    },
+    {
+        title: "Automated Medical Coding Using Hybrid Decision Trees – Master’s Thesis",
+        // link: "https://ieeexplore.ieee.org/document/YourPaperID", // Add actual IEEE link when available
+        description: "Designed a hybrid classification pipeline combining rule-based decision trees and LSTM models for ICD code prediction using clinical discharge summaries, achieving a 17% accuracy improvement. Accepted for publication at IEEE CISOSE 2025.",
+        skills: ["Python", "Scikit-learn", "LSTM", "GPT-4", "MIMIC-IV"],
+        image: "images/icdCode.png"
     }
 ];
+
 
 // Function to create projects HTML
 function createProjectsHTML(project) {
@@ -144,6 +189,25 @@ function createProjectsHTML(project) {
     if (project.skills) {
         projectInfo += `<p><strong>Key Skills:</strong> ${Array.isArray(project.skills) ? project.skills.join(', ') : project.skills}</p>`;
     }
+    if(project.image) {
+        projectInfo += `<div class="image-container" style="width: 500px; height: 300px; margin-left: 200px; object-fit: cover; border-radius: 8px;">
+            <img src="${project.image}" alt="data Viz" class="project_image">
+        </div>`
+    }
+    if (project.images && project.images.length > 0) {
+        projectInfo += `<div class="image-gallery" style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">`;
+
+        project.images.forEach(img => {
+            projectInfo += `
+                <div class="image-container" style="flex: 0 0 15%; max-width: 30%; box-sizing: border-box;">
+                    <img src="${img}" alt="Project Image" style="width: 150px; height: 300px; object-fit: contain; border-radius: 8px; background-color:rgb(255, 250, 250);" class="project_image">
+                </div>
+            `;
+        });
+
+        projectInfo += `</div>`;
+    }
+
 
     return projectInfo;
 }
@@ -175,10 +239,10 @@ document.querySelectorAll('nav a').forEach(anchor => {
 
 //skills
 const skillsData = [
-    { category: "Programming Languages", skills: ["Professional Experience : ", "Kotlin", "PHP", "Javascript", "Personal Projects : ","Java", "C", "Python"], proficiency: [90, 80, 85, 75, 70, 95] },
-    { category: "Database Systems", skills: ["SQL Server", "MYSQL"], proficiency: [85, 90] },
-    { category: "Operating Systems", skills: ["Windows 7/11", "Ubuntu"], proficiency: [90, 80] },
-    { category: "Version Control", skills: ["Github", "Gitlab", "Bitbucket"], proficiency: [95, 85, 90] }
+    { category: "Languages", skills: ["Kotlin", "Java", "Python", "Javascript"], proficiency: [90, 80] },
+    { category: "Software Developement", skills: ["Jetpack Compose", "Compose Multiplatform", "MVVM", "Retrofit", "Hilt", "WorkManager", "Jetpack Navigation",
+"Firebase Realtime Database", "Room", "Ktor Server", "Spring Boot", "SQLite", "MySQL", "Firebase", "MongoDB"], proficiency: [85, 90] },
+    { category: "Machine Learning", skills: ["PyTorch", "TensorFlow", "Scikit-learn", "Pandas", "NumPy", "NLTK", "SpaCy", "BERT", "d3.js"], proficiency: [95, 85, 90] }
 ];
 
 function renderSkills() {
