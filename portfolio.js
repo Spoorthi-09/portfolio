@@ -136,6 +136,17 @@ const projectsData = [
         ]
     },
     {
+        "title": "Multilingual Translator App – Android (Jetpack Compose + ML Kit)",
+        "link": "https://github.com/Spoorthi-09/TranslatorApp",  // Replace with your actual GitHub repo link
+        "description": "Built a real-time multilingual translator Android app using Jetpack Compose and Google ML Kit. Automatically detects input language and translates text into a user-selected target language using on-device translation models. Designed a responsive UI with Compose, implemented coroutine-based translation pipeline, and handled model download lifecycle efficiently. Optimized for offline usage after initial model download.",
+        "skills": ["Kotlin", "Jetpack Compose", "ML Kit", "Coroutines", "Language Detection", "Translation", "Android"],
+        "images": [
+            "images/translator1.jpeg",  // Replace with actual screenshots from your app
+            "images/translator2.jpeg",
+            "images/translator3.jpeg"
+        ]
+    },
+    {
         title: "Personal Expense Manager – Full Stack Web Application",
         // link: "https://github.com/Spoorthi-09/ExpenseManager", // Add actual link
         description: "Designed and developed a full-stack expense manager using Spring Boot, JavaScript, and MongoDB. Implemented RESTful APIs, secure authentication, multi-account tracking, and responsive front-end with real-time search and filtering.",
@@ -169,7 +180,7 @@ const projectsData = [
     },
     {
         title: "Automated Medical Coding Using Hybrid Decision Trees – Master’s Thesis",
-        // link: "https://ieeexplore.ieee.org/document/YourPaperID", // Add actual IEEE link when available
+        link: "http://www.cis.umassd.edu/~hxu/Papers/UMD/2019/CP/IEEE-BDS25-Xu.pdf", // Add actual IEEE link when available
         description: "Designed a hybrid classification pipeline combining rule-based decision trees and LSTM models for ICD code prediction using clinical discharge summaries, achieving a 17% accuracy improvement. Accepted for publication at IEEE CISOSE 2025.",
         skills: ["Python", "Scikit-learn", "LSTM", "GPT-4", "MIMIC-IV"],
         image: "images/icdCode.png"
@@ -215,7 +226,8 @@ function createProjectsHTML(project) {
 // Display projects details
 projectsData.forEach(proj => {
     const projectsSection = document.getElementById("projects");
-    projectsSection.insertAdjacentHTML('beforeend', createProjectsHTML(proj));
+    const htmlWithSpacing = createProjectsHTML(proj) + "<br><br>";  
+    projectsSection.insertAdjacentHTML('beforeend', htmlWithSpacing);
 });
 
 
