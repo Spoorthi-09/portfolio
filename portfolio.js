@@ -6,7 +6,7 @@ d3.select("#about")
         "With an educational background in Computer and Information Science and practical experience in Software development, " +
         "I'm dedicated to contributing my technical expertise to challenging projects and advancing my knowledge and skills in the field.<span>")
     .append("p")
-    .html("<div class='button-container'><a href='resume\\SpoorthiSubramanyaBhat_Resume.pdf' download='Spoorthi_Bhat_Resume.pdf'><button>Download Resume</button></a></div>");
+    .html("<div class='button-container'><a href='resume\\SpoorthiBhat_Resume_AI.pdf' download='Spoorthi_Bhat_Resume.pdf'><button>Download Resume</button></a></div>");
 
 //----------------------------------------------------------------------------------------------------------------------------------
 // Education

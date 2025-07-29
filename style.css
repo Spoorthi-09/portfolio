@@ -87,7 +87,7 @@ footer {
 }
 
 .rounded-image:hover {
-    transform: scale(1.1); /* optional: adjust the scale factor for the hover effect */
+    transform: scale(1.1); 
 }
 
 .project_image { 
@@ -95,7 +95,7 @@ footer {
     transition: transform 0.3s ease-in-out; /* optional: add a smooth hover effect */
 }
 .project_image:hover {
-    transform: scale(2); /* optional: adjust the scale factor for the hover effect */
+    transform: scale(1.1); /* optional: adjust the scale factor for the hover effect */
 }
 .button-container{
     display: flex; 
